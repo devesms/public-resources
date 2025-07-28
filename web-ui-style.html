@@ -1,0 +1,116 @@
+<!--https://manage.vihat.vn/secure/attachment/35002/35002_M%C3%A0u+c%E1%BB%A7a+n%C3%BAt.txt-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email - eSms</title>
+    <style type="text/css">
+      body {
+        background-color: #f7f7f7;
+        padding: 5% 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button:active {
+        transform: translateY(2px);
+      }
+
+      .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .ebtn {
+        cursor: pointer;
+        margin: 0.8px 1rem;
+        padding: 8px 16px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: transform 0.2s, background-position 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 10px;
+        border: 0;
+        font-weight: bold;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        background-image: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+      }
+
+      .ebtn:active {
+        transform: scale(1.1);
+      }
+
+      .ebtn:hover {
+        background-position: right center;
+        text-decoration: none;
+      }
+
+      .ebtn:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+
+      /* Color variants */
+      .ebtn-default {
+        background-image: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+      }
+
+      .ebtn-primary {
+        background-image: linear-gradient(97deg, rgba(62, 160, 237, 1) 13%, rgba(7, 101, 213, 1) 47%);
+      }
+
+      .ebtn-success {
+        background-image: linear-gradient(90deg, hsla(97, 56%, 42%, 1) 0%, hsla(92, 55%, 62%, 1) 100%)
+      }
+
+      .ebtn-warning {
+        background-image: linear-gradient(90deg, hsl(4deg 73.06% 59.67%) 0%, hsla(37, 89%, 52%, 1) 100%)
+      }
+
+      .ebtn-danger {
+        background-image: linear-gradient(90deg, rgba(252, 70, 58, 1) 20%, rgba(221, 13, 13, 1) 75%)
+      }
+
+      .ebtn-cancel {
+        background-image: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsl(216deg 23.7% 81.42%) 100%);
+        color: black
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="button-group">
+      <button type="button" class="ebtn ebtn-primary"> primary </button>
+      <button type="button" class="ebtn ebtn-success"> success </button>
+      <button type="button" class="ebtn ebtn-warning"> warning </button>
+      <button type="button" class="ebtn ebtn-danger"> danger </button>
+      <button type="button" class="ebtn ebtn-cancel"> cancel </button>
+      <button type="button" class="ebtn ebtn-default"> default </button>
+    </div>
+
+    <hr style="width: 100%; border: 1px solid #ddd;" />
+
+    <div class="button-group">
+      <p style="width: 100%; text-align: center; font-style: italic; color: #666; margin-bottom: 0.5rem;">
+        Đây là các nút bị vô hiệu hóa (disabled):
+      </p>
+
+      <button type="button" disabled class="ebtn ebtn-primary"> primary </button>
+      <button type="button" disabled class="ebtn ebtn-success"> success </button>
+      <button type="button" disabled class="ebtn ebtn-warning"> warning </button>
+      <button type="button" disabled class="ebtn ebtn-danger"> danger </button>
+      <button type="button" disabled class="ebtn ebtn-cancel"> cancel </button>
+      <button type="button" disabled class="ebtn ebtn-default"> default </button>
+    </div>
+
+  </body>
+
+</html>
